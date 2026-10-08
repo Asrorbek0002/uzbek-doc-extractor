@@ -1,0 +1,36 @@
+# 2-topshiriq: PDF hujjat tahlili
+#
+# CHEKLOV (topshiriqdan): hujjatlar tashqi bulut xizmatlariga yuborilmasin.
+# Shuning uchun bu ro'yxatda hech qanday bulut SDK si yo'q — butun quvur
+# shu kompyuterda ishlaydi va internetsiz ham to'liq yuradi.
+
+# --- PDF o'qish (matn qatlami bor hujjatlar) ---
+# pdfplumber jadval CHIZIQLARINI ko'radi va kataklarni to'g'ri qaytaradi.
+# PyMuPDF/pdftotext matnni tekis beradi — ikki qatorli katakda "qaysi so'z
+# qaysi ustunda" ekanini ajratib bo'lmaydi. Tafsilot: README.md
+pdfplumber>=0.11
+
+# --- API va veb interfeys ---
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+python-multipart>=0.0.9     # PDF yuklash (UploadFile) uchun SHART
+python-dotenv>=1.0
+
+# ─────────────────────────────────────────────────────────────────────────
+# TIZIM PAKETLARI — pip bilan emas, apt bilan o'rnatiladi:
+#
+#   sudo apt install -y tesseract-ocr tesseract-ocr-uzb poppler-utils
+#
+#   tesseract      skaner hujjatlar uchun OCR (o'zbek tili: `uzb`)
+#   poppler-utils  `pdftoppm` — PDF ni 300 dpi PNG ga aylantiradi
+#
+# NEGA pytesseract / pdf2image YO'Q: ikkisi ham shu ikki buyruqning ustiga
+# yupqa qobiq. To'g'ridan-to'g'ri `subprocess` bilan chaqirish bir bog'liqlikni
+# kamaytiradi va TSV chiqishini (so'z koordinatalari) to'liq boshqarishga
+# imkon beradi — skaner jadvallarini tiklash aynan shunga tayanadi.
+#
+# NEGA PaddleOCR EMAS: o'zbek tiliga maxsus o'rgatilgan modeli yo'q (faqat
+# umumiy `latin`), tesseract'da esa `uzb` bor. O'lchangan: abzats matnida
+# CER 1.83%. Tafsilot: data/results/ocr_sifat.json
+# ─────────────────────────────────────────────────────────────────────────

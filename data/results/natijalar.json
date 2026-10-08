@@ -1,0 +1,575 @@
+[
+ {
+  "fayl": "NAMUNA_1_abzats.pdf",
+  "tur": "qaror",
+  "betlar": 1,
+  "manba": "matn",
+  "rekvizitlar": {
+   "tashkilot": "HUQUQIY XIZMATLARNI RAQAMLASHTIRISH MILLIY AGENTLIGI KENGASHINING",
+   "raqam": "121",
+   "sana": "2026-yil 10-fevral",
+   "imzolagan": "M. Tursunov",
+   "sana_iso": "2026-02-10",
+   "lavozim": "Kengash raisi",
+   "qabul_qiluvchi": "",
+   "ijrochi_kontakt": ""
+  },
+  "topshiriqlar": [
+   {
+    "tartib": "1",
+    "matn": "Ro'yxatga olish departamenti yuridik shaxslarni ro'yxatdan o'tkazish tartibini soddalashtirishni nazarda tutuvchi hujjat loyihasini bir oy muddatda ishlab chiqsin va Kengash muhokamasiga kiritsin.",
+    "ijrochi": "Ro'yxatga olish departamenti",
+    "muddat": "bir oy muddatda",
+    "muddat_turi": "nisbiy",
+    "muddat_sana": "2026-03-10",
+    "muddat_izoh": "hujjat sanasidan +bir oy",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "2",
+    "matn": "Axborot texnologiyalari boshqarmasi Ro'yxatga olish departamenti bilan birgalikda ro'yxatdan o'tkazish axborot tizimining yagona interaktiv davlat xizmatlari portali bilan integratsiyasini 2026-yil 1-iyulga qadar ta'minlasin.",
+    "ijrochi": "Axborot texnologiyalari boshqarmasi, Ro'yxatga olish departamenti",
+    "muddat": "2026-yil 1-iyulga qadar",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-07-01",
+    "muddat_izoh": "aniq sana",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "3",
+    "matn": "Huquqiy ekspertiza boshqarmasi ro'yxatdan o'tkazishda taqdim etiladigan hujjatlarni avtomatik tekshirish modulini joriy etish yuzasidan takliflar tayyorlasin.",
+    "ijrochi": "Huquqiy ekspertiza boshqarmasi",
+    "muddat": "bir oy muddatda",
+    "muddat_turi": "nisbiy",
+    "muddat_sana": "2026-03-10",
+    "muddat_izoh": "hujjat sanasidan +bir oy (hujjatning standart muddat qoidasidan)",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "4",
+    "matn": "Hududiy bo'linmalar yangi tartib bo'yicha amaliy qo'llanmani tarqatish va aholiga tushuntirish ishlarini 2026-yil 15-martdan boshlab tashkil etsin.",
+    "ijrochi": "Hududiy bo'linmalar",
+    "muddat": "2026-yil 15-martdan boshlab",
+    "muddat_turi": "boshlanish",
+    "muddat_sana": "2026-03-15",
+    "muddat_izoh": "bu tugash muddati EMAS, ish boshlanish sanasi",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "5",
+    "matn": "Ro'yxatga olish departamenti mazkur qaror ijrosi to'g'risida har oyda Kengashga ma'lumot berib borsin.",
+    "ijrochi": "Ro'yxatga olish departamenti",
+    "muddat": "har oyda",
+    "muddat_turi": "takrorlanuvchi",
+    "muddat_sana": "",
+    "muddat_izoh": "davriy — bitta sana yo'q",
+    "manba": "abzats",
+    "bet": 1
+   }
+  ],
+  "rasmiy_hujjatmi": true,
+  "dalillar": [
+   "hujjat raqami topildi",
+   "hujjat sanasi topildi",
+   "5 ta topshiriq topildi"
+  ]
+ },
+ {
+  "fayl": "NAMUNA_2_jadval.pdf",
+  "tur": "qaror",
+  "betlar": 1,
+  "manba": "matn",
+  "rekvizitlar": {
+   "tashkilot": "YURIDIK XIZMATLAR SIFATINI OSHIRISH RESPUBLIKA KOMISSIYASINING",
+   "raqam": "145",
+   "sana": "2026-yil 24-fevral",
+   "imzolagan": "O. Saidov",
+   "sana_iso": "2026-02-24",
+   "lavozim": "Komissiya raisi",
+   "qabul_qiluvchi": "",
+   "ijrochi_kontakt": ""
+  },
+  "topshiriqlar": [
+   {
+    "tartib": "1",
+    "matn": "Murojaatlarni avtomatik tasniflash modulini joriy etish",
+    "ijrochi": "Axborot texnologiyalari boshqarmasi",
+    "muddat": "2026-yil 1-may",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-05-01",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "2",
+    "matn": "Elektron yuridik maslahat chatbotini ishga tushirish",
+    "ijrochi": "Axborot texnologiyalari boshqarmasi, Yuridik xizmat ko'rsatish boshqarmasi",
+    "muddat": "2026-yil 15-iyun",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-06-15",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "3",
+    "matn": "Topshiriqlarni avtomatik taqsimlash tizimini sinovdan o'tkazish",
+    "ijrochi": "Ish yuritish (devonxona) bo'limi",
+    "muddat": "tizim tayyor bo'lgandan so'ng 2 oy ichida",
+    "muddat_turi": "bogliq",
+    "muddat_sana": "",
+    "muddat_izoh": "«tizim tayyor» voqeasidan keyin 2 oy",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "4",
+    "matn": "Xodimlar uchun o'quv seminarlarini tashkil etish",
+    "ijrochi": "Kadrlar boshqarmasi",
+    "muddat": "har chorakda",
+    "muddat_turi": "takrorlanuvchi",
+    "muddat_sana": "",
+    "muddat_izoh": "davriy — bitta sana yo'q",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "5",
+    "matn": "Ma'lumotlar xavfsizligi talablariga muvofiqlikni ta'minlash",
+    "ijrochi": "Axborot xavfsizligi bo'linmasi",
+    "muddat": "2026-yil 20-aprel",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-04-20",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "2",
+    "matn": "Axborot texnologiyalari boshqarmasi yuqoridagi topshiriqlar ijrosi to'g'risida har chorak yakunidan keyingi oyning 10-sanasiga qadar Komissiyaga axborot kiritsin.",
+    "ijrochi": "Axborot texnologiyalari boshqarmasi",
+    "muddat": "har chorak yakunidan keyingi oyning 10-sanasiga qadar",
+    "muddat_turi": "takrorlanuvchi",
+    "muddat_sana": "",
+    "muddat_izoh": "davriy — bitta sana yo'q",
+    "manba": "abzats",
+    "bet": 1
+   }
+  ],
+  "rasmiy_hujjatmi": true,
+  "dalillar": [
+   "hujjat raqami topildi",
+   "hujjat sanasi topildi",
+   "6 ta topshiriq topildi"
+  ]
+ },
+ {
+  "fayl": "NAMUNA_3_ilova.pdf",
+  "tur": "qaror",
+  "betlar": 2,
+  "manba": "matn",
+  "rekvizitlar": {
+   "tashkilot": "NOTARIAT VA FHDYO FAOLIYATINI MUVOFIQLASHTIRISH KENGASHINING",
+   "raqam": "160",
+   "sana": "2026-yil 5-mart",
+   "imzolagan": "G. Nazarova",
+   "sana_iso": "2026-03-05",
+   "lavozim": "Kengash raisi",
+   "qabul_qiluvchi": "",
+   "ijrochi_kontakt": ""
+  },
+  "topshiriqlar": [
+   {
+    "tartib": "1",
+    "matn": "Notariat harakatlarini elektron qayd etish modulini joriy etish",
+    "ijrochi": "Notariat boshqarmasi",
+    "muddat": "2026-yil 1-iyun",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-06-01",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "2",
+    "matn": "FHDYo yozuvlarini raqamli arxivga o'tkazish",
+    "ijrochi": "FHDYo boshqarmasi",
+    "muddat": "2026-yil 1-avgust",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-08-01",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "3",
+    "matn": "Elektron hujjatlarni tizimlararo almashish integratsiyasini ta'minlash",
+    "ijrochi": "Axborot texnologiyalari boshqarmasi",
+    "muddat": "texnik topshiriq tasdiqlangandan so'ng 3 oy ichida",
+    "muddat_turi": "bogliq",
+    "muddat_sana": "",
+    "muddat_izoh": "«texnik topshiriq» voqeasidan keyin 3 oy",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "4",
+    "matn": "Hududiy bo'linmalar xodimlarini yangi tizimda ishlashga o'qitish",
+    "ijrochi": "Kadrlar boshqarmasi, hududiy bo'linmalar",
+    "muddat": "2026-yil 15-may",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-05-15",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "5",
+    "matn": "Fuqarolar uchun qo'llanma va axborot materiallarini tayyorlash",
+    "ijrochi": "Axborot xizmati",
+    "muddat": "bir oy muddatda",
+    "muddat_turi": "nisbiy",
+    "muddat_sana": "2026-04-05",
+    "muddat_izoh": "hujjat sanasidan +bir oy",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "3",
+    "matn": "Kengash kotibiyati ilova ijrosi to'g'risida har chorakda Kengash yig'ilishiga axborot kiritib borsin.",
+    "ijrochi": "Kengash kotibiyati",
+    "muddat": "har chorakda",
+    "muddat_turi": "takrorlanuvchi",
+    "muddat_sana": "",
+    "muddat_izoh": "davriy — bitta sana yo'q",
+    "manba": "abzats",
+    "bet": 1
+   }
+  ],
+  "rasmiy_hujjatmi": true,
+  "dalillar": [
+   "hujjat raqami topildi",
+   "hujjat sanasi topildi",
+   "6 ta topshiriq topildi"
+  ]
+ },
+ {
+  "fayl": "xat_1_abzatsdagi_topshiriqlar.pdf",
+  "tur": "xat",
+  "betlar": 1,
+  "manba": "matn",
+  "rekvizitlar": {
+   "tashkilot": "RAQAMLI HUQUQIY XIZMATLAR AGENTLIGI",
+   "raqam": "03-12/1456",
+   "sana": "08.09.2026",
+   "imzolagan": "Sh. Qodirov",
+   "sana_iso": "2026-09-08",
+   "lavozim": "Direktor o'rinbosari",
+   "qabul_qiluvchi": "Adliya organlari va muassasalarida axborot texnologiyalarini rivojlantirish markaziga",
+   "ijrochi_kontakt": "N. Sobirova"
+  },
+  "topshiriqlar": [
+   {
+    "tartib": "1",
+    "matn": "Markazning Tizim tahlili bo'limi amaldagi murojaatlar portalining funksional imkoniyatlarini tahlil qilib, foydalanuvchilar eng ko'p murojaat qiladigan xizmatlar va mavjud muammolar bo'yicha tahliliy ma'lumotni 2026-yil 20-sentabrga qadar Agentlikka taqdim etsin.",
+    "ijrochi": "Markazning Tizim tahlili bo'limi",
+    "muddat": "2026-yil 20-sentabrga qadar",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-09-20",
+    "muddat_izoh": "aniq sana",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "2",
+    "matn": "Sun'iy intellekt laboratoriyasi portalga kelib tushayotgan murojaatlarni mavzu va yo'nalishlar bo'yicha avtomatik tasniflash imkoniyatini joriy etish yuzasidan texnik takliflarni 01.10.2026 yilgacha ishlab chiqsin.",
+    "ijrochi": "Sun'iy intellekt laboratoriyasi",
+    "muddat": "01.10.2026 yilgacha",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-10-01",
+    "muddat_izoh": "aniq sana",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "3",
+    "matn": "Axborot xavfsizligi bo'limi Sun'iy intellekt laboratoriyasi bilan birgalikda sun'iy intellekt xizmatlariga uzatiladigan ma'lumotlar tarkibini o'rganib, shaxsga doir va foydalanilishi cheklangan ma'lumotlarni himoya qilish bo'yicha takliflarni o'n kun muddatda kiritsin.",
+    "ijrochi": "Axborot xavfsizligi bo'limi, Sun'iy intellekt laboratoriyasi",
+    "muddat": "o'n kun muddatda",
+    "muddat_turi": "nisbiy",
+    "muddat_sana": "2026-09-18",
+    "muddat_izoh": "hujjat sanasidan +o'n kun",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "4",
+    "matn": "Dasturiy ta'minotni ishlab chiqish bo'limi fuqarolarga davlat va huquqiy xizmatlar bo'yicha ma'lumot beruvchi virtual yordamchining tajriba-sinov variantini tayyorlab, uni 2026-yil 25-oktabrga qadar sinovdan o'tkazsin.",
+    "ijrochi": "Dasturiy ta'minotni ishlab chiqish bo'limi",
+    "muddat": "2026-yil 25-oktabrga qadar",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-10-25",
+    "muddat_izoh": "aniq sana",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "5",
+    "matn": "Markaz yuqoridagi topshiriqlar ijrosi holati to'g'risida har oyning 5-sanasiga qadar Agentlikning Loyihalarni boshqarish departamentiga ma'lumot berib borsin",
+    "ijrochi": "Markaz",
+    "muddat": "har oyning 5-sanasiga qadar",
+    "muddat_turi": "takrorlanuvchi",
+    "muddat_sana": "",
+    "muddat_izoh": "davriy — bitta sana yo'q",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "",
+    "matn": "Shuningdek, ishlar natijalari bo'yicha umumlashtirilgan hisobot va keyingi bosqich uchun takliflarni 2026-yil 5-noyabrga qadar Agentlik rahbariyatiga taqdim etishingizni so'raymiz",
+    "ijrochi": "Adliya organlari va muassasalarida axborot texnologiyalarini rivojlantirish markaziga",
+    "muddat": "2026-yil 5-noyabrga qadar",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-11-05",
+    "muddat_izoh": "aniq sana",
+    "manba": "abzats",
+    "bet": 1
+   },
+   {
+    "tartib": "",
+    "matn": "Topshiriqlar ijrosi uchun mas'ul xodimlar to'g'risidagi ma'lumotni uch ish kuni ichida taqdim etishingiz so'raladi.",
+    "ijrochi": "Adliya organlari va muassasalarida axborot texnologiyalarini rivojlantirish markaziga",
+    "muddat": "uch ish kuni ichida",
+    "muddat_turi": "nisbiy",
+    "muddat_sana": "2026-09-11",
+    "muddat_izoh": "hujjat sanasidan +uch ish kuni (ish kunlari)",
+    "manba": "abzats",
+    "bet": 1
+   }
+  ],
+  "rasmiy_hujjatmi": true,
+  "dalillar": [
+   "hujjat raqami topildi",
+   "hujjat sanasi topildi",
+   "7 ta topshiriq topildi"
+  ]
+ },
+ {
+  "fayl": "xat_2_jadvaldagi_topshiriqlar.pdf",
+  "tur": "xat",
+  "betlar": 1,
+  "manba": "matn",
+  "rekvizitlar": {
+   "tashkilot": "“YANGI AVLOD RAQAMLI YECHIMLAR” DAVLAT UNITAR KORXONASI",
+   "raqam": "15/2-784",
+   "sana": "11.09.2026",
+   "imzolagan": "A. Yusupov",
+   "sana_iso": "2026-09-11",
+   "lavozim": "Bosh direktor",
+   "qabul_qiluvchi": "Adliya organlari va muassasalarida axborot texnologiyalarini rivojlantirish markaziga",
+   "ijrochi_kontakt": "M. Karimova"
+  },
+  "topshiriqlar": [
+   {
+    "tartib": "1",
+    "matn": "Murojaatlar portalidagi mavjud klassifikatorlarni inventarizatsiya qilish va ularni takomillashtirish bo'yicha taklif tayyorlash",
+    "ijrochi": "Tizim tahlili bo'limi",
+    "muddat": "18.09.2026",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-09-18",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "2",
+    "matn": "Hujjatlardan topshiriq, muddat va ijrochi haqidagi ma'lumotlarni avtomatik ajratish bo'yicha prototip ishlab chiqish",
+    "ijrochi": "Sun'iy intellekt laboratoriyasi",
+    "muddat": "30.09.2026",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-09-30",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "3",
+    "matn": "Topshiriqlarni tarkibiy bo'linmalarga yo'naltirish uchun vakolatlar va tashkiliy tuzilma ma'lumotlarini shakllantirish",
+    "ijrochi": "Biznes-tahlil bo'limi, Kadrlar bo'limi",
+    "muddat": "2026-yil 5-oktabr",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-10-05",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "4",
+    "matn": "AI modullarining mavjud axborot tizimlari bilan integratsiyasi bo'yicha texnik talablarni tayyorlash",
+    "ijrochi": "Integratsiya bo'limi",
+    "muddat": "prototip tayyor bo'lgandan so'ng 15 kun ichida",
+    "muddat_turi": "bogliq",
+    "muddat_sana": "",
+    "muddat_izoh": "«prototip tayyor» voqeasidan keyin 15 kun",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "5",
+    "matn": "Tajriba-sinov natijalarini baholash va aniqlangan kamchiliklar bo'yicha takliflar kiritish",
+    "ijrochi": "Loyiha guruhi",
+    "muddat": "01.11.2026",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-11-01",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "6",
+    "matn": "Bajarilgan ishlar holati to'g'risida qisqacha ma'lumot taqdim etish",
+    "ijrochi": "Loyiha koordinatori",
+    "muddat": "har haftaning juma kuni",
+    "muddat_turi": "takrorlanuvchi",
+    "muddat_sana": "",
+    "muddat_izoh": "davriy — bitta sana yo'q",
+    "manba": "jadval",
+    "bet": 1
+   },
+   {
+    "tartib": "",
+    "matn": "Bajarilgan ishlar bo'yicha umumlashtirilgan ma'lumot loyiha koordinatori orqali Korxonaning Raqamli loyihalar boshqarmasiga taqdim etilsin.",
+    "ijrochi": "Bajarilgan ishlar bo'yicha umumlashtirilgan ma'lumot loyiha koordinatori",
+    "muddat": "",
+    "muddat_turi": "yoq",
+    "muddat_sana": "",
+    "muddat_izoh": "",
+    "manba": "abzats",
+    "bet": 1
+   }
+  ],
+  "rasmiy_hujjatmi": true,
+  "dalillar": [
+   "hujjat raqami topildi",
+   "hujjat sanasi topildi",
+   "7 ta topshiriq topildi"
+  ]
+ },
+ {
+  "fayl": "xat_3_ilovadagi_topshiriqlar.pdf",
+  "tur": "xat",
+  "betlar": 2,
+  "manba": "matn",
+  "rekvizitlar": {
+   "tashkilot": "MA'LUMOTLAR XAVFSIZLIGI VA INTEGRATSIYA AGENTLIGI",
+   "raqam": "07-04/2219",
+   "sana": "15.09.2026",
+   "imzolagan": "D. Ergasheva",
+   "sana_iso": "2026-09-15",
+   "lavozim": "Direktor",
+   "qabul_qiluvchi": "Adliya organlari va muassasalarida axborot texnologiyalarini rivojlantirish markaziga",
+   "ijrochi_kontakt": "B. Hamidov"
+  },
+  "topshiriqlar": [
+   {
+    "tartib": "1",
+    "matn": "Ichki axborot tizimlarida sun'iy intellekt qo'llash mumkin bo'lgan jarayonlarni aniqlash",
+    "ijrochi": "Tizim tahlili bo'limi",
+    "muddat": "20.09.2026",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-09-20",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "2",
+    "matn": "Tanlangan jarayonlar uchun zarur ma'lumotlar manbalarini inventarizatsiya qilish",
+    "ijrochi": "Ma'lumotlar bazalarini boshqarish bo'limi",
+    "muddat": "30.09.2026",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-09-30",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "3",
+    "matn": "Topshiriqlarni avtomatik aniqlash va atributlarini ajratish modulining tajriba-sinov variantini ishlab chiqish",
+    "ijrochi": "Sun'iy intellekt laboratoriyasi, Dasturiy ta'minotni ishlab chiqish bo'limi",
+    "muddat": "2026-yil 15-oktabr",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-10-15",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "4",
+    "matn": "Taqsimlash modulida foydalaniladigan tarkibiy bo'linmalar vakolatlari bazasini shakllantirish",
+    "ijrochi": "Biznes-tahlil bo'limi",
+    "muddat": "25.10.2026",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-10-25",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "5",
+    "matn": "Modullarning axborot xavfsizligi talablariga muvofiqligini tekshirish",
+    "ijrochi": "Axborot xavfsizligi bo'limi",
+    "muddat": "prototip tayyor bo'lgandan so'ng 10 kun ichida",
+    "muddat_turi": "bogliq",
+    "muddat_sana": "",
+    "muddat_izoh": "«prototip tayyor» voqeasidan keyin 10 kun",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "6",
+    "matn": "Tajriba-sinov natijalarini tahlil qilib, keyingi joriy etish bosqichi bo'yicha takliflar tayyorlash",
+    "ijrochi": "Loyiha guruhi",
+    "muddat": "10.11.2026",
+    "muddat_turi": "absolyut",
+    "muddat_sana": "2026-11-10",
+    "muddat_izoh": "aniq sana",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "7",
+    "matn": "Xodimlarni yangi modullar bilan ishlashga o'qitish",
+    "ijrochi": "Kadrlar bo'limi",
+    "muddat": "doimiy",
+    "muddat_turi": "doimiy",
+    "muddat_sana": "",
+    "muddat_izoh": "tugash sanasi yo'q",
+    "manba": "jadval",
+    "bet": 2
+   },
+   {
+    "tartib": "",
+    "matn": "Ilovada ko'rsatilgan topshiriqlarning o'z vaqtida va sifatli bajarilishini ta'minlash hamda ijro holati to'g'risida har oyning 25-sanasiga qadar Agentlikka axborot kiritib borishingizni so'raymiz",
+    "ijrochi": "Adliya organlari va muassasalarida axborot texnologiyalarini rivojlantirish markaziga",
+    "muddat": "har oyning 25-sanasiga qadar",
+    "muddat_turi": "takrorlanuvchi",
+    "muddat_sana": "",
+    "muddat_izoh": "davriy — bitta sana yo'q",
+    "manba": "abzats",
+    "bet": 1
+   }
+  ],
+  "rasmiy_hujjatmi": true,
+  "dalillar": [
+   "hujjat raqami topildi",
+   "hujjat sanasi topildi",
+   "8 ta topshiriq topildi"
+  ]
+ }
+]

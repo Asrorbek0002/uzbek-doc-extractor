@@ -1,0 +1,19 @@
+{
+ "rekvizitlar": {
+  "togri": 24,
+  "jami": 24,
+  "aniqlik": 1.0
+ },
+ "topshiriqlar": {
+  "topildi": 39,
+  "qoldirilgan": 0,
+  "ortiqcha": 0,
+  "ijrochi_togri": 39,
+  "tur_togri": 39,
+  "sana_togri": 39
+ },
+ "recall": 1.0,
+ "precision": 1.0,
+ "f1": 1.0,
+ "xatolar": []
+}

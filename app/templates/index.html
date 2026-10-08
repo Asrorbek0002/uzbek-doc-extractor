@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hujjat tahlili</title>
+<style>
+:root{
+  --fon:#f6f7f9; --karta:#fff; --chiziq:#e3e6ea; --matn:#1b1f24; --past:#6b7480;
+  --asos:#2f6feb; --asos-fon:#eaf1fe;
+  --yashil:#1a7f45; --yashil-fon:#e6f6ec;
+  --kok:#1f6aa8;   --kok-fon:#e8f1f9;
+  --sariq:#8a5a00; --sariq-fon:#fdf3e0;
+  --qizil:#b3261e; --qizil-fon:#fdeceb;
+  --kul-fon:#eef0f2;
+  --soya:0 1px 2px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --fon:#14171a; --karta:#1c2024; --chiziq:#2c3238; --matn:#e6e9ec; --past:#9aa4b0;
+    --asos:#6fa0ff; --asos-fon:#1d2838;
+    --yashil:#5fd08a; --yashil-fon:#17271d;
+    --kok:#6fb6f0;   --kok-fon:#16242f;
+    --sariq:#e0b060; --sariq-fon:#2a2114;
+    --qizil:#ff8d84; --qizil-fon:#2c1917;
+    --kul-fon:#24292e;
+    --soya:0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--fon); color:var(--matn);
+  font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.sahifa{max-width:980px; margin:0 auto; padding:32px 16px 72px}
+header{margin-bottom:26px}
+h1{margin:0 0 6px; font-size:25px; letter-spacing:-.02em}
+.izoh{color:var(--past); font-size:14px}
+.karta{
+  background:var(--karta); border:1px solid var(--chiziq); border-radius:14px;
+  box-shadow:var(--soya); padding:20px; margin-bottom:18px;
+}
+h2{margin:0 0 14px; font-size:15px; font-weight:650; letter-spacing:.01em}
+h2 .son{color:var(--past); font-weight:450}
+
+/* ── upload ── */
+.tashla{
+  border:1.5px dashed var(--chiziq); border-radius:12px; padding:30px 20px;
+  text-align:center; cursor:pointer; transition:.15s; background:transparent;
+}
+.tashla:hover,.tashla.ustida{border-color:var(--asos); background:var(--asos-fon)}
+.tashla .belgi{font-size:26px; opacity:.5; display:block; margin-bottom:8px}
+.tashla b{font-weight:600}
+.tashla small{display:block; color:var(--past); margin-top:5px; font-size:13px}
+.tanlangan{
+  display:none; align-items:center; gap:10px; margin-top:14px; padding:10px 13px;
+  background:var(--kul-fon); border-radius:9px; font-size:14px;
+}
+.tanlangan.ko{display:flex}
+.tanlangan .nom{flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.tanlangan .ol{
+  background:none; border:none; color:var(--past); cursor:pointer;
+  font-size:18px; line-height:1; padding:0 2px;
+}
+.qator{display:flex; gap:10px; align-items:center; margin-top:14px; flex-wrap:wrap}
+button.asosiy{
+  background:var(--asos); color:#fff; border:none; border-radius:9px;
+  padding:10px 20px; font-size:14.5px; font-weight:600; cursor:pointer;
+  font-family:inherit; transition:.15s;
+}
+button.asosiy:hover:not(:disabled){filter:brightness(1.07)}
+button.asosiy:disabled{opacity:.45; cursor:default}
+select{
+  background:var(--karta); color:var(--matn); border:1px solid var(--chiziq);
+  border-radius:9px; padding:9px 11px; font-size:14px; font-family:inherit;
+  max-width:100%;
+}
+
+/* ── status ── */
+.holat{display:none; align-items:center; gap:10px; color:var(--past); font-size:14px}
+.holat.ko{display:flex}
+.aylana{
+  width:15px; height:15px; border:2px solid var(--chiziq);
+  border-top-color:var(--asos); border-radius:50%; animation:ayl .7s linear infinite;
+}
+@keyframes ayl{to{transform:rotate(360deg)}}
+.xato{
+  display:none; background:var(--qizil-fon); color:var(--qizil);
+  border-radius:9px; padding:11px 13px; font-size:14px; margin-top:14px;
+}
+.xato.ko{display:block}
+.ogoh{
+  display:none; background:var(--sariq-fon); color:var(--sariq);
+  border-radius:9px; padding:12px 14px; font-size:14px; margin-bottom:18px;
+  line-height:1.5;
+}
+.ogoh.ko{display:block}
+.ogoh b{font-weight:650}
+.ogoh small{display:block; margin-top:5px; opacity:.85}
+
+/* ── letterhead fields ── */
+.maydonlar{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1px;
+  background:var(--chiziq); border:1px solid var(--chiziq); border-radius:10px; overflow:hidden}
+.maydon{background:var(--karta); padding:12px 14px}
+.maydon .k{color:var(--past); font-size:12px; text-transform:uppercase; letter-spacing:.04em}
+.maydon .q{margin-top:3px; font-weight:550; word-break:break-word}
+.maydon .q.bosh{color:var(--past); font-weight:400}
+
+/* ── action items ── */
+.ish{border:1px solid var(--chiziq); border-radius:11px; padding:14px 15px; margin-bottom:10px}
+.ish:last-child{margin-bottom:0}
+.ish .sarl{display:flex; gap:10px; align-items:flex-start}
+.ish .raqam{
+  flex:0 0 26px; height:26px; border-radius:7px; background:var(--kul-fon);
+  color:var(--past); font-size:13px; font-weight:650;
+  display:flex; align-items:center; justify-content:center;
+}
+.ish .matn{flex:1; line-height:1.5}
+.ish .pastki{display:flex; gap:8px; flex-wrap:wrap; margin:11px 0 0 36px}
+.yorliq{
+  display:inline-flex; align-items:center; gap:6px; font-size:12.5px;
+  padding:4px 9px; border-radius:7px; background:var(--kul-fon); color:var(--past);
+  max-width:100%;
+}
+.yorliq b{font-weight:600; color:var(--matn)}
+.yorliq.yashil{background:var(--yashil-fon)} .yorliq.yashil b{color:var(--yashil)}
+.yorliq.kok{background:var(--kok-fon)}       .yorliq.kok b{color:var(--kok)}
+.yorliq.sariq{background:var(--sariq-fon)}   .yorliq.sariq b{color:var(--sariq)}
+.yorliq.qizil{background:var(--qizil-fon)}   .yorliq.qizil b{color:var(--qizil)}
+.tur{font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; opacity:.75}
+
+/* ── summary ── */
+.xulosa{display:flex; gap:18px; flex-wrap:wrap; color:var(--past); font-size:13.5px}
+.xulosa b{color:var(--matn); font-weight:600}
+#natija{display:none}
+#natija.ko{display:block}
+footer{color:var(--past); font-size:12.5px; text-align:center; margin-top:30px}
+footer a{color:var(--asos)}
+</style>
+</head>
+<body>
+<div class="sahifa">
+
+<header>
+  <h1>Hujjat tahlili</h1>
+  <div class="izoh">PDF dan rekvizitlar va topshiriqlarni ajratib oladi —
+    matnli ham, skaner qilingan ham. Hammasi shu kompyuterda, bulutga yuborilmaydi.</div>
+</header>
+
+<div class="karta">
+  <h2>Hujjat tanlash</h2>
+
+  <div class="tashla" id="tashla">
+    <span class="belgi">⬆</span>
+    <b>PDF faylni bu yerga tashlang</b>
+    <small>yoki bosib tanlang · maksimum <span id="maksMb">20</span> MB</small>
+    <input type="file" id="fayl" accept="application/pdf" hidden>
+  </div>
+
+  <div class="tanlangan" id="tanlangan">
+    <span>📄</span>
+    <span class="nom" id="faylNom"></span>
+    <span id="faylOlcham" style="color:var(--past)"></span>
+    <button class="ol" id="olib" title="olib tashlash">×</button>
+  </div>
+
+  <div class="qator">
+    <button class="asosiy" id="tahlilBtn" disabled>Tahlil qilish</button>
+    <select id="namuna">
+      <option value="">— yoki namuna hujjatni tanlang —</option>
+    </select>
+    <div class="holat" id="holat"><div class="aylana"></div><span id="holatMatn"></span></div>
+  </div>
+
+  <div class="xato" id="xato"></div>
+</div>
+
+<div id="natija">
+  <div class="ogoh" id="ogoh"></div>
+
+  <div class="karta">
+    <h2>Rekvizitlar</h2>
+    <div class="maydonlar" id="rekvizitlar"></div>
+  </div>
+
+  <div class="karta">
+    <h2>Topshiriqlar <span class="son" id="ishSoni"></span></h2>
+    <div id="ishlar"></div>
+  </div>
+
+  <div class="karta">
+    <h2>Tahlil haqida</h2>
+    <div class="xulosa" id="xulosa"></div>
+  </div>
+</div>
+
+<footer>
+  <a href="/docs">API hujjati</a> · <span id="salomatlik"></span>
+</footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const E = (t, k, m) => { const e = document.createElement(t); if (k) e.className = k;
+                         if (m !== undefined) e.textContent = m; return e; };
+
+let tanlanganFayl = null;
+
+/* ── deadline type -> colour and its Uzbek label (shown to the user) ── */
+const TUR = {
+  absolyut:       ['yashil', 'aniq sana'],
+  nisbiy:         ['kok',    'hujjat sanasidan'],
+  takrorlanuvchi: ['sariq',  'takrorlanuvchi'],
+  bogliq:         ['sariq',  'shartga bog‘liq'],
+  boshlanish:     ['sariq',  'boshlanish sanasi'],
+  doimiy:         ['',       'doimiy'],
+  yoq:            ['qizil',  'muddat yo‘q'],
+};
+
+const REKVIZIT = [
+  ['tashkilot', 'Jo‘natuvchi tashkilot'],
+  ['raqam',     'Hujjat raqami'],
+  ['sana',      'Sanasi'],
+  ['imzolagan', 'Imzolagan shaxs'],
+];
+
+/* ── choosing a file ── */
+const tashla = $('#tashla');
+tashla.onclick = () => $('#fayl').click();
+$('#fayl').onchange = e => faylOl(e.target.files[0]);
+['dragenter', 'dragover'].forEach(v => tashla.addEventListener(v, e => {
+  e.preventDefault(); tashla.classList.add('ustida');
+}));
+['dragleave', 'drop'].forEach(v => tashla.addEventListener(v, e => {
+  e.preventDefault(); tashla.classList.remove('ustida');
+}));
+tashla.addEventListener('drop', e => faylOl(e.dataTransfer.files[0]));
+$('#olib').onclick = () => faylOl(null);
+
+function faylOl(f) {
+  tanlanganFayl = f || null;
+  $('#tanlangan').classList.toggle('ko', !!f);
+  if (f) {
+    $('#faylNom').textContent = f.name;
+    $('#faylOlcham').textContent = (f.size / 1024 / 1024).toFixed(1) + ' MB';
+    $('#namuna').value = '';
+  }
+  yangila();
+}
+
+$('#namuna').onchange = () => { if ($('#namuna').value) faylOl(null); yangila(); };
+function yangila() { $('#tahlilBtn').disabled = !(tanlanganFayl || $('#namuna').value); }
+
+/* ── analysis ── */
+$('#tahlilBtn').onclick = async () => {
+  const namuna = $('#namuna').value;
+  const skanermi = /skaner/i.test(namuna || (tanlanganFayl?.name ?? ''));
+  boshla(skanermi ? 'OCR ishlayapti — skaner hujjat, 20-40 sekund olishi mumkin…'
+                  : 'Tahlil qilinayapti…');
+  try {
+    let javob;
+    if (namuna) {
+      javob = await fetch('/api/namuna/' + encodeURIComponent(namuna), { method: 'POST' });
+    } else {
+      const fd = new FormData();
+      fd.append('fayl', tanlanganFayl);
+      javob = await fetch('/api/tahlil', { method: 'POST', body: fd });
+    }
+    const d = await javob.json();
+    if (!javob.ok) throw new Error(d.xato || d.detail || 'Server xatosi');
+    korsat(d);
+  } catch (x) {
+    xatoKorsat(x.message || String(x));
+  } finally {
+    tugat();
+  }
+};
+
+function boshla(m) {
+  $('#holatMatn').textContent = m;
+  $('#holat').classList.add('ko');
+  $('#xato').classList.remove('ko');
+  $('#tahlilBtn').disabled = true;
+}
+function tugat() { $('#holat').classList.remove('ko'); yangila(); }
+function xatoKorsat(m) {
+  $('#xato').textContent = m;
+  $('#xato').classList.add('ko');
+  $('#natija').classList.remove('ko');
+}
+
+/* ── rendering the result ── */
+function korsat(d) {
+  // if it does not look like an official document — warn openly.
+  // The rules are fitted to the structure of an official letter/decree, so on
+  // an unrelated PDF the result cannot be trusted. Staying silent would be wrong.
+  const og = $('#ogoh');
+  if (d.rasmiy_hujjatmi === false) {
+    og.textContent = '';
+    const b = E('b', null, 'Bu fayl rasmiy xat yoki qarorga o\u2018xshamaydi.');
+    og.append(b);
+    og.append(E('small', null,
+      'Tizim rasmiy hujjat tuzilishiga moslangan (hujjat raqami, sanasi, '
+      + 'imzo, topshiriq jadvali). Topilgan ma\u2019lumotlarga ishonmang.'));
+    og.classList.add('ko');
+  } else {
+    og.classList.remove('ko');
+  }
+
+  // letterhead fields
+  const r = $('#rekvizitlar'); r.textContent = '';
+  for (const [kalit, nom] of REKVIZIT) {
+    const q = d.rekvizitlar[kalit];
+    const m = E('div', 'maydon');
+    m.append(E('div', 'k', nom));
+    const v = E('div', 'q' + (q ? '' : ' bosh'), q || 'aniqlanmadi');
+    if (kalit === 'sana' && d.rekvizitlar.sana_iso)
+      v.title = 'ISO: ' + d.rekvizitlar.sana_iso;
+    m.append(v);
+    r.append(m);
+  }
+
+  // action items
+  const ish = $('#ishlar'); ish.textContent = '';
+  $('#ishSoni').textContent = d.topshiriqlar.length + ' ta';
+  if (!d.topshiriqlar.length) {
+    ish.append(E('div', 'izoh', 'Bu hujjatda topshiriq topilmadi.'));
+  }
+  d.topshiriqlar.forEach((t, i) => {
+    const k = E('div', 'ish');
+    const sarl = E('div', 'sarl');
+    sarl.append(E('div', 'raqam', t.tartib || (i + 1)));
+    sarl.append(E('div', 'matn', t.matn));
+    k.append(sarl);
+
+    const pastki = E('div', 'pastki');
+    const [rang, turNomi] = TUR[t.muddat.tur] || ['', t.muddat.tur];
+
+    // deadline
+    const my = E('div', 'yorliq ' + rang);
+    my.append(E('span', 'tur', turNomi));
+    my.append(E('b', null, t.muddat.sana || t.muddat.xom || '—'));
+    if (t.muddat.sana && t.muddat.xom && t.muddat.sana !== t.muddat.xom)
+      my.title = 'hujjatda: ' + t.muddat.xom + (t.muddat.izoh ? ' · ' + t.muddat.izoh : '');
+    else if (t.muddat.izoh) my.title = t.muddat.izoh;
+    pastki.append(my);
+
+    // assignee
+    const iy = E('div', 'yorliq');
+    iy.append(E('span', 'tur', 'ijrochi'));
+    iy.append(E('b', null, t.ijrochi || '—'));
+    pastki.append(iy);
+
+    // source
+    const sy = E('div', 'yorliq');
+    sy.append(E('span', 'tur', t.manba === 'jadval' ? 'jadvaldan' : 'abzatsdan'));
+    pastki.append(sy);
+
+    k.append(pastki);
+    ish.append(k);
+  });
+
+  // summary
+  const x = $('#xulosa'); x.textContent = '';
+  const jadval = d.topshiriqlar.filter(t => t.manba === 'jadval').length;
+  [['Fayl', d.fayl],
+   ['Turi', d.tur || '—'],
+   ['Betlar', d.betlar],
+   ['O‘qish usuli', d.manba === 'ocr' ? 'OCR (Tesseract)' : 'matn qatlami'],
+   ['Jadvaldan / abzatsdan', jadval + ' / ' + (d.topshiriqlar.length - jadval)],
+   ['Vaqt', (d.vaqt_ms / 1000).toFixed(1) + ' s'],
+   ['Rasmiy hujjatmi', d.rasmiy_hujjatmi ? 'ha' : 'yo\u2018q'],
+  ].forEach(([k, v]) => {
+    const s = E('span'); s.append(k + ': '); s.append(E('b', null, v)); x.append(s);
+  });
+
+  $('#natija').classList.add('ko');
+  $('#natija').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* ── initial data ── */
+(async () => {
+  try {
+    const n = await (await fetch('/api/namunalar')).json();
+    const s = $('#namuna');
+    for (const tur of ['matnli', 'skaner']) {
+      const g = document.createElement('optgroup');
+      g.label = tur === 'matnli' ? 'Matnli PDF (OCR kerak emas)' : 'Skaner (OCR ishlaydi)';
+      n.filter(x => x.tur === tur).forEach(x => {
+        const o = document.createElement('option');
+        o.value = x.nom;
+        o.textContent = x.nom.replace(/\.pdf$/, '') + '  ·  ' + x.olcham_kb + ' KB';
+        g.append(o);
+      });
+      if (g.children.length) s.append(g);
+    }
+  } catch (x) { /* it works even without the samples */ }
+
+  try {
+    const h = await (await fetch('/api/salomatlik')).json();
+    $('#salomatlik').textContent =
+      'PDF o‘qish: ' + (h.pdf_oqish ? 'tayyor' : 'yo‘q') +
+      ' · OCR: ' + (h.ocr ? 'tayyor (' + h.ocr_tillari.join(', ') + ')' : 'yo‘q') +
+      ' · namunalar: ' + h.namunalar;
+  } catch (x) { /* it works even if health is not shown */ }
+})();
+</script>
+</body>
+</html>

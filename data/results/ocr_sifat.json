@@ -1,0 +1,84 @@
+{
+ "til": "uzb",
+ "dpi": 300,
+ "abzats": {
+  "hujjatlar": [
+   {
+    "hujjat": "NAMUNA_1_abzats",
+    "belgilar": 1488,
+    "cer": 0.0034,
+    "wer": 0.0357
+   },
+   {
+    "hujjat": "NAMUNA_2_jadval",
+    "belgilar": 731,
+    "cer": 0.0068,
+    "wer": 0.0714
+   },
+   {
+    "hujjat": "NAMUNA_3_ilova",
+    "belgilar": 1098,
+    "cer": 0.0055,
+    "wer": 0.0551
+   },
+   {
+    "hujjat": "xat_1_abzatsdagi_topshiriqlar",
+    "belgilar": 2128,
+    "cer": 0.0188,
+    "wer": 0.0343
+   },
+   {
+    "hujjat": "xat_2_jadvaldagi_topshiriqlar",
+    "belgilar": 868,
+    "cer": 0.0392,
+    "wer": 0.0761
+   },
+   {
+    "hujjat": "xat_3_ilovadagi_topshiriqlar",
+    "belgilar": 1077,
+    "cer": 0.0409,
+    "wer": 0.1034
+   }
+  ],
+  "umumiy_cer": 0.0181,
+  "umumiy_wer": 0.0561
+ },
+ "jadval": {
+  "hujjatlar": [
+   {
+    "hujjat": "NAMUNA_2_jadval",
+    "qator_etalon": 5,
+    "qator_ocr": 5,
+    "kataklar": 20,
+    "aynan": 20,
+    "cer": 0.0
+   },
+   {
+    "hujjat": "NAMUNA_3_ilova",
+    "qator_etalon": 5,
+    "qator_ocr": 5,
+    "kataklar": 20,
+    "aynan": 18,
+    "cer": 0.0037
+   },
+   {
+    "hujjat": "xat_2_jadvaldagi_topshiriqlar",
+    "qator_etalon": 6,
+    "qator_ocr": 6,
+    "kataklar": 24,
+    "aynan": 17,
+    "cer": 0.0555
+   },
+   {
+    "hujjat": "xat_3_ilovadagi_topshiriqlar",
+    "qator_etalon": 7,
+    "qator_ocr": 7,
+    "kataklar": 35,
+    "aynan": 30,
+    "cer": 0.0204
+   }
+  ],
+  "aynan_nisbat": 0.8586,
+  "umumiy_cer": 0.0238
+ }
+}

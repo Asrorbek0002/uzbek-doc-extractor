@@ -1,0 +1,21 @@
+# ── environment ───────────────────────────────────────────────────────────
+# `venv` without a trailing slash: it must also be ignored when it is a
+# symlink to a shared environment — `venv/` only matches a real directory.
+venv
+__pycache__/
+*.pyc
+
+# ── secrets ───────────────────────────────────────────────────────────────
+# .env is NEVER committed; .env.example is.
+.env
+
+# ── generated output ──────────────────────────────────────────────────────
+# Logs are regenerated. The result JSONs STAY — they are the measurements.
+data/results/*.log
+
+# The OCR cache — a 300 dpi render plus the Tesseract output. It is
+# recomputable (18-36 s per document), so it is not committed.
+data/results/ocr_kesh/
+
+# Documents uploaded through the web interface — user files, never committed
+data/input/yuklama/
